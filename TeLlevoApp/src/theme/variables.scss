@@ -74,6 +74,15 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+
+  /** rojoApp **/
+  --ion-color-rojoapp: #f4f5f8;
+  --ion-color-rojoapp-rgb: 244, 245, 248;
+  --ion-color-rojoapp-contrast: #000000;
+  --ion-color-rojoapp-contrast-rgb: 0, 0, 0;
+  --ion-color-rojoapp-shade: #d7d8da;
+  --ion-color-rojoapp-tint: #f5f6f9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -153,7 +162,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: transparent;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;

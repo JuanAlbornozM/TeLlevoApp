@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center ">
+  <ion-content class="fondoLogin">
+    <h1 class="bold-title textoBlanco titulo">TELLEVO</h1>
+    <p class="textoBlanco">Tu app para compartir y ganar</p>
+    <br />
+    <br />
+    <h3 class="bold-title textoBlanco">Bienvenido!</h3>
+    <ion-list-header>
+      <ion-label class="bold-title textoBlanco">{{user || ''}} </ion-label>
+    </ion-list-header>
+
+
+    <ion-list class="transparente">
+      <ion-item>
+        <ion-input maxlength="8" label="Usuario" labelPlacement="stacked" [clearOnEdit]="true"
+          placeholder="Ingrese Usuario max 8." [(ngModel)]="user">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Password" labelPlacement="stacked" type="password" placeholder="Ingrese Password"
+          [(ngModel)]="pass">
+        </ion-input>
+      </ion-item>
+
+      <br>
+
+      <ion-button (click)="guardarDatos()" expand="full">Ingresar</ion-button>
+
+      <ion-button (click)="registro()">Recuperar</ion-button>
+      <ion-button (click)="recupera()">Registro</ion-button>
+    </ion-list>
+
+  </ion-content>
+</ion-content>
