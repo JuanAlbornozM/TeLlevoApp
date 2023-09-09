@@ -1,0 +1,42 @@
+<ion-header [translucent]="true" style="width: 100%;">
+  <ion-toolbar style="display: flex; align-items: center; justify-content: center;">
+    <ion-title style="display: flex; justify-content: center;">Recuperacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="display: flex; justify-content: center; flex-direction: column; width: 100%;">
+    <h2 style="display: flex; justify-content: center;">Recuperacion de contraseña</h2>
+    <p style="display: flex; justify-content: center;">Ingrese su nombre de usuario</p>
+  </div>
+  <form #formulario="ngForm"  style="display: flex; justify-content: center; margin-top: 5rem;">
+
+    <ion-list style="display: flex; justify-content: center; flex-direction: column; width: 80%;">
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" 
+                  name="nombre" 
+                  required 
+                  [clearInput]="true"                 
+                  maxlength="3"
+                  maxlength="8"
+                  helperText="usuario valido"
+                  errorText="ingrese un usuario valido">
+        </ion-input>
+      </ion-item>
+      <div style="display: flex; justify-content: center; margin-top: 4rem;">
+      <ion-checkbox labelPlacement="end" justify="start">Aceptar terminos y condiciones</ion-checkbox>
+    </div>
+    </ion-list>  
+  
+  </form>
+  
+    <div style="display: flex; justify-content: center; width: 100%; margin-top: 3rem;">
+      <ion-button expand="block" style="width: 60%;">Recuperar</ion-button>     
+    </div>
+    <div>
+      <ion-button expand="block" fill="clear" shape="round" [routerLink]="['/home']">
+        Pagina Principal
+      </ion-button>
+    </div>
+</ion-content>
