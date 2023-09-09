@@ -33,7 +33,7 @@ export class LoginPage implements OnInit {
   }
 
   recupera(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/recuperar-contrasena']);
   }
 
   registro(){
