@@ -1,6 +1,7 @@
 import { Component, OnInit, } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { GlobalService } from '../global.service';
 
 
 
@@ -15,13 +16,20 @@ export class LoginPage implements OnInit {
   pass: string = '';
 
 
-  constructor(private alertController: AlertController, private router: Router) {}
+  constructor(private alertController: AlertController, private router: Router, private globalusuario: GlobalService) {}
   
   ngOnInit() {
   }
 
+  
+
   guardarDatos() {
     if (this.pass.length==4 && this.user.toString().trim() !== '') {
+
+      this.globalusuario.setGlobalUsuario(this.user);
+
+      //console.log(this.globalusuario.getGlobalUsuario());
+
       this.router.navigate(['/home']);
 
    
