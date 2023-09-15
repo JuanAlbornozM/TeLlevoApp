@@ -11,7 +11,9 @@ export class HomePage {
 
   usu: any;
 
-  constructor(private globalusuario: GlobalService, private router: Router) {}
+  constructor(private globalusuario: GlobalService, private router: Router) {
+    this.getGlobalusu();
+  }
 
   ngOnInit() {
     this.getGlobalusu();
