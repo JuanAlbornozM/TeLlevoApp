@@ -1,22 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <h1 (click)="getGlobalusu()">presiona</h1>
+      <h1 style="color: black;">{{ usu }} acaca</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content [fullscreen]="true" class="background">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <h1 (click)="getGlobalusu()">presiona {{ usu }}</h1>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-item>
-    <ion-button class="btn-login" fill="outline" size="large" [routerLink]="['/recuperar-contrasena']">
-      <ion-icon slot="start" name="star"></ion-icon>
-      Recuperar Contraseña
-    </ion-button>
-  </ion-item>
+
 </ion-content>
+
+
+
+  <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button tab="login" (click)="gologin()">
+      <ion-icon name="log-in"></ion-icon>
+      Login
+    </ion-tab-button>
+    <ion-tab-button tab="perfil">
+      <ion-icon name="person"></ion-icon>
+      Perfil
+    </ion-tab-button>
+    <ion-tab-button tab="vehiculo">
+      <ion-icon name="car-sport"></ion-icon>
+      Vehiculo
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GlobalService } from '../global.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +9,20 @@ import { GlobalService } from '../global.service';
 })
 export class HomePage {
 
-  usu: string = '';
+  usu: any;
 
-  constructor(private globalusuario: GlobalService) {}
+  constructor(private globalusuario: GlobalService, private router: Router) {}
+
+  ngOnInit() {
+    this.getGlobalusu();
+  }
 
   getGlobalusu(){
     this.usu = this.globalusuario.getGlobalUsuario();
-    console.log(this.usu);
+  }
+
+  gologin(){
+    this.router.navigate(['/login']);
   }
 
   
