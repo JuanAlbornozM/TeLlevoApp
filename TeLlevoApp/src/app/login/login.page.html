@@ -1,22 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700;">LOGIN</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-text-center">
   <ion-content class="fondoLogin">
-    <h1 class="bold-title textoBlanco titulo">TELLEVO</h1>
-    <p class="textoBlanco">Tu app para compartir y ganar</p>
     <br />
     <br />
-    <h3 class="bold-title textoBlanco">Bienvenido!</h3>
-    <ion-list-header>
-      <ion-label class="bold-title textoBlanco">{{user || ''}} </ion-label>
-    </ion-list-header>
+    <h3 class="bold-title textoBlanco"> Bienvenido!</h3>
 
-    <ion-list class="transparente">
-      <ion-item>
+    <ion-list class="transparente" style="margin-top: 30%;">
+      <ion-item style=" opacity: 0.7;">
         <ion-input
           maxlength="15"
           label="Usuario"
@@ -28,7 +23,7 @@
         </ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item style=" opacity: 0.7;">
         <ion-input
           label="Password"
           labelPlacement="stacked"
@@ -40,11 +35,14 @@
       </ion-item>
 
       <br />
-
-      <ion-button (click)="guardarDatos()" expand="full">Ingresar</ion-button>
-
+      <div>
+      <ion-button (click)="guardarDatos()" style="width: 15rem;">Ingresar</ion-button>
+    </div>
+    <div>
       <ion-button (click)="recupera()">Recuperar</ion-button>
       <ion-button (click)="registro()">Registro</ion-button>
+      </div>
     </ion-list>
   </ion-content>
+  
 </ion-content>

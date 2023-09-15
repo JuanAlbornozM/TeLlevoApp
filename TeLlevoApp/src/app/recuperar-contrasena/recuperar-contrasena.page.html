@@ -17,7 +17,7 @@
                   name="nombre"
                   required
                   [clearInput]="true"
-                  maxlength="3"
+                  minlength="3"
                   maxlength="8"
                   helperText="usuario valido"
                   errorText="ingrese un usuario valido">
@@ -29,6 +29,6 @@
     </ion-list>    
   </form>  
     <div style="display: flex; justify-content: center; width: 100%; margin-top: 3rem;">
-      <ion-button expand="block" style="width: 60%;">Recuperar</ion-button>     
+      <ion-button expand="block" style="width: 60%;" (click)="gologin()">Recuperar</ion-button>     
     </div>
 </ion-content>

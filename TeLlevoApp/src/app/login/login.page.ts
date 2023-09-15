@@ -58,6 +58,11 @@ export class LoginPage implements OnInit {
 
     await alert.present();
 
+    
+
+  }
+  gohome(){
+    this.router.navigate(['/home']);
   }
 
 
