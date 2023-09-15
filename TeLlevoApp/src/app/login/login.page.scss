@@ -41,3 +41,17 @@ ion-button {
     --color: white;
 
  }
+
+ .h1-animated {
+   font-size: 24px; /* Tamaño inicial del h1 */
+   animation: enlargeAndShrink 2s infinite alternate; /* Nombre de la animación y duración */
+ }
+ 
+ @keyframes enlargeAndShrink {
+   0% {
+     font-size: 24px; /* Tamaño inicial */
+   }
+   100% {
+     font-size: 36px; /* Tamaño final */
+   }
+ }
