@@ -4,11 +4,11 @@ color: white;
 
 ion-button {
     --background: #910303;
-    --background-hover: #8f4d4d;
+    --background-hover: #be6565;
     --background-activated: #910303;
     --background-focused: #8f4d4d;
 
-    --color: #000;
+    --color: white;
 
     --border-radius: 0;
     --border-color: #000;
@@ -38,5 +38,20 @@ ion-button {
 
  ion-toolbar{
     --background: #910303;
+    --color: white;
 
+ }
+
+ .h1-animated {
+   font-size: 24px; /* Tamaño inicial del h1 */
+   animation: enlargeAndShrink 2s infinite alternate; /* Nombre de la animación y duración */
+ }
+ 
+ @keyframes enlargeAndShrink {
+   0% {
+     font-size: 24px; /* Tamaño inicial */
+   }
+   100% {
+     font-size: 36px; /* Tamaño final */
+   }
  }
