@@ -26,7 +26,6 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 ion-content.fondoLogin{
---background: url("../src/assets/img/dodge_login400x900.jpg") no-repeat center center ;
-background: linear-gradient(red, black 40% 20%);
+--background: url("../src/assets/img/dodge_login400x900.jpg") center center/cover;
 
 }
