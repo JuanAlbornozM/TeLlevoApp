@@ -1,43 +1,56 @@
-# 🚗 TeLlevoApp – Aplicación de Transporte Compartido
+# TeLlevoApp 🚗📱
 
-**Proyecto desarrollado como parte del curso de Aplicaciones Móviles.**
+**Proyecto semestral - Aplicaciones Móviles**
 
----
-
-## 📱 Tecnologías utilizadas
-
-- **Framework:** Ionic + Angular
-- **Lenguaje:** TypeScript
-- **Estilo:** CSS, HTML
-- **Herramientas adicionales:** Capacitor, VSCode
+Aplicación desarrollada como parte del ramo de desarrollo mobile. Simula una plataforma de traslado tipo ride-sharing, enfocada en la experiencia de usuario y el diseño adaptable a móviles.
 
 ---
 
-## 👨‍💻 Funcionalidades principales
+## 🔧 Tecnologías utilizadas
 
-- Registro y login de usuarios
-- Visualización de rutas disponibles
-- Generación de viajes personalizados
-- Sistema de notificaciones y sugerencias
-
----
-
-## 👥 Equipo de desarrollo
-
-- **Juan Albornoz** – _Desarrollo Frontend (UI/UX, home, navegación principal)_
-- **Cristian Mardones** – _Funcionalidades lógicas, conexión con servicios_
+- **Ionic Framework**
+- **Angular**
+- **TypeScript**
+- **Capacitor**
+- **CSS3**
 
 ---
 
-## 📂 Estructura general del proyecto
+## 🎯 Funcionalidades principales
+
+- Registro e inicio de sesión de usuarios
+- Solicitud de viaje
+- Selección de origen y destino
+- Visualización de historial
+- Recuperación de contraseña (en progreso)
+
+---
+
+## 🧠 Rol en el proyecto
+
+- Desarrollo Frontend: diseño de vistas, navegación y consumo de servicios
+- Implementación de lógica en componentes Angular
+- Pruebas en dispositivo físico
+
+---
+
+## 👥 Integrantes del equipo
+
+- Juan Albornoz *(Frontend y UI)*
+- Cristian Mardones *(Lógica y apoyo backend)*
+
+---
+
+## 📂 Estructura del proyecto
 
 ```bash
 TeLlevoApp/
 ├── src/
 │   ├── app/
 │   ├── assets/
-│   └── ...
-├── package.json
+│   ├── environments/
+│   └── index.html
 ├── capacitor.config.ts
-├── tsconfig.json
-└── ...
+├── angular.json
+├── package.json
+└── README.md
