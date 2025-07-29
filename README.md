@@ -37,7 +37,7 @@ Aplicación desarrollada como parte del ramo de desarrollo mobile. Simula una pl
 ## 👥 Integrantes del equipo
 
 - Juan Albornoz *(Frontend y UI)*
-- Cristian Mardones *(Lógica y apoyo backend)*
+- Cristian Mardones *(Lógica y Backend)*
 
 ---
 
